@@ -15,7 +15,7 @@ body, html {
 }
 
 .titleBG {
-    background-image: url("Katy_Maggie_Boat.png");
+    background-image: url("Katy_Maggie_Boat_Dark.png");
     content: "";
     /* Full height */
     min-height: 100%;
@@ -45,13 +45,6 @@ body::-webkit-scrollbar {
     min-height: 105vh;
     position: relative;
     width: 100%;
-}
-.title::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.75);
-    z-index: -1;
 }
 
 .hiddenTitle {
@@ -119,108 +112,49 @@ ul {
     background-image: linear-gradient(#131316, rgba(0,0,0,0));
 }
 
-li {
-    float: left;
-}
-li #logo {
-    opacity: 1;
-    filter: blur(0px);
-    transform: translateX(0);
-    transition: all 1s;
-}
-
-li:hover a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    opacity: 1;
-    filter: blur(0px);
-    transform: translateX(0);
-    transition: all 1s;
-}
-li:hover #logo {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
-}
-
-
 li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
 }
 #burgee {
+    position: fixed;
     height: 30px;
+    display: block;
+    padding: 14px 16px;
 }
-
-
 li a:hover {
     background-color: #500000;
     color: #ffffff;
 }
-#logo:hover {
-    background-color: rgba(0,0,0,0);
+
+ul:hover li a {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    transition: all 0.5s;
+}
+ul:hover #burgee {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 0.5s;
+}
+ul li a {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 0.5s;
+}
+ul #burgee {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    transition: all 0.5s;
 }
 
-.active {
-    background-color: #04AA6D;
+li {
+    float: left;
 }
-
-.loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -90px 0 0 -90px;
-}
-
-.circle {
-    position: absolute;
-    border: 3px solid transparent;
-    border-top-color: #9ee925;
-    border-radius: 50%;
-    animation: rotate linear infinite;
-}
-
-.circle.one {
-    height: 50px;
-    width: 50px;
-    left: 50px;
-    top: 50px;
-    animation-duration: 0.85s;
-}
-
-.circle.two {
-    height: 75px;
-    width: 75px;
-    left: 38px;
-    top: 38px;
-    animation-duration: 0.95s;
-}
-
-.circle.three {
-    height: 100px;
-    width: 100px;
-    left: 25px;
-    top: 25px;
-    animation-duration: 1.05s;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotateZ(360deg);
-    }
-    to {
-        transform: rotateZ(0deg);
-    }
-}
-
