@@ -63,8 +63,11 @@ body::-webkit-scrollbar {
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 105vh;
+    min-height: 100vh;
     user-select: none;
+}
+#About {
+    min-height: 101vh;
 }
 
 .hidden, .left {
