@@ -122,6 +122,30 @@ ul {
 li {
     float: left;
 }
+li #logo {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+li:hover a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    transition: all 1s;
+}
+li:hover #logo {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
 
 
 li a {
@@ -130,6 +154,10 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
 }
 #burgee {
     height: 30px;
