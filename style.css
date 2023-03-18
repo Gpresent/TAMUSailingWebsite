@@ -70,6 +70,16 @@ body::-webkit-scrollbar {
     min-height: 101vh;
 }
 
+#schedule {
+    width: 80%
+}
+.schedule {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 2s;
+    
+}
+
 .hidden, .left {
     opacity: 0;
     filter: blur(5px);

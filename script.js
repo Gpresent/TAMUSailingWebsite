@@ -19,3 +19,6 @@ hiddenLeft.forEach((el) => observer.observe(el));
 
 const hiddenRight = document.querySelectorAll('.right');
 hiddenRight.forEach((el) => observer.observe(el));
+
+const hiddenSchedule = document.querySelectorAll('.schedule');
+hiddenSchedule.forEach((el) => observer.observe(el));
