@@ -45,6 +45,7 @@ body::-webkit-scrollbar {
     min-height: 105vh;
     position: relative;
     width: 100%;
+    text-align: center;
 }
 
 .hiddenTitle {
